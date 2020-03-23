@@ -4,6 +4,7 @@ html {
     border: 5px solid white;
     margin: 15px;
     height: 2000px;
+    overflow: hidden;
 }
 
 body {
@@ -11,9 +12,12 @@ body {
     padding: 20px;
     border: 5px solid black;
     margin: 0;
+    overflow: hidden;
 }
 
 .parent {
+    position: relative;
+    top: 200px;
     background: white;
     padding: 20px;
     border: 5px solid black;
@@ -26,13 +30,4 @@ body {
     padding: 10px;
     border: 5px solid black;
     margin: 10px;
-}
-
-.parent .child-1 {
-    position: fixed;
-    top: 0;
-    left: 0;
-    margin: 0;
-    width: 100%;
-    box-sizing: border-box;
 }
